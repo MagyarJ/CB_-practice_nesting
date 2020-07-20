@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows:  auto 1fr auto;
+  grid-gap: 10px;
+  background-color: aliceblue;
+  padding: 10px;
+  grid-template-areas:
+    "header header header"
+    "menu main  sidebar"
+    "menu main  sidebar"
+    "footer footer footer";
+	height: 100vh;
+}
+.header {
+  grid-area: header;
+}
+
+.menu {
+  grid-area: menu;
+  margin-left: 0.5rem;
+}
+
+.main {
+  grid-area: main;
+}
+
+sidebar {
+  grid-area: sidebar;
+  margin-right: 0.5rem;
+}
+
+.footer {
+  grid-area: footer;
+}
